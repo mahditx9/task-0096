@@ -12,7 +12,7 @@ export const useEditUser = ({ id }: { id: string }) => {
     unknown,
     CreateUserInformationError
   >({
-    method: "POST",
+    method: "PUT",
     url: `/api/dashboard/${id}`,
   });
   return { editUserRequest };
